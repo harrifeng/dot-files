@@ -82,5 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # SAP proxy
 export http_proxy='http://proxy.sin.sap.corp:8080'
 export https_proxy='http://proxy.sin.sap.corp:8080'
+export TZ=US/Pacific
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
