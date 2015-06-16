@@ -80,6 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # SAP proxy
+export TAG_WITH_I18N_ORIGIN_OFF=true
 export http_proxy='http://proxy.sin.sap.corp:8080'
 export https_proxy='http://proxy.sin.sap.corp:8080'
 export TZ=US/Pacific
