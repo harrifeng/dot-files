@@ -2,6 +2,15 @@
 
 export http_proxy='http://proxy.sin.sap.corp:8080'
 export https_proxy='http://proxy.sin.sap.corp:8080'
+# to Make emacs use sogoupinyin
+export LC_CTYPE=zh_CN.utf8
+export LC_ALL=zh_CN.utf8
+
+# export LANGUAGE=en_US.UTF-8
+# export LANG=en_US.UTF-8
+# export LC_MESSAGES=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
+
 
 # Following is from Debian 6
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -104,4 +113,5 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
