@@ -12,3 +12,9 @@ parse_git_branch() {
 export PS1="\u@ \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# For golang
+export GOPATH=~/golang-space
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
