@@ -18,3 +18,12 @@ export GOPATH=~/golang-space
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+export TERM=xterm-256color
+
+# for local mysql database
+export DB_PWD=''
+
+
+# for no proxy local ip address
+no_proxy=localhost,129.0.0.0/8,127.9.9.1*,local,$no_proxy
+export no_proxy
