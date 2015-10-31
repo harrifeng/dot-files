@@ -136,3 +136,5 @@ export TERM=xterm-256color
 
 export GOPATH=~/golang-space
 export PATH=$PATH:$GOPATH/bin
+
+alias emacs='emacs -nw'
