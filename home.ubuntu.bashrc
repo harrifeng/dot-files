@@ -134,6 +134,8 @@ parse_git_branch() {
 export PS1="\u@ \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 export TERM=xterm-256color
 
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
 export GOPATH=~/golang-space
 export PATH=$PATH:$GOPATH/bin
 
