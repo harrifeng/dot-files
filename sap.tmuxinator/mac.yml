@@ -28,18 +28,18 @@ root: ~/
 # post: tmux -CC attach -t mac-tmux
 
 windows:
-  - editor:
+  - Editor:
       root: ~/code/ct
       panes:
         - emacs
         - fish
-  - server:
+  - Server:
       root: ~/code/ct
       panes:
         - bundle exec rails s
         - fish
-  - logs: emacs ~/code/ct/log/development.log
-  - daemon:
+  - Logs: emacs ~/code/ct/log/development.log
+  - Daemon:
       root: ~/code/ct
       panes:
         - caffeinate -d
