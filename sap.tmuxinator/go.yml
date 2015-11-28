@@ -29,19 +29,12 @@ root: ~/
 
 windows:
   - Editor:
-      root: ~/code/ct
+      root: ~/golang-space
       panes:
         - emacs
         - fish
-  - Server:
-      root: ~/code/ct
-      panes:
-        - bundle exec rails s
-        - fish
-  - Logs: emacs ~/code/ct/log/development.log
   - Daemon:
-      root: ~/code/ct
+      root: ~/golang-space
       panes:
-        - zeus start
-        - bundle exec rake ultrasphinx:daemon:start
+        - fish
         - caffeinate -d

@@ -22,9 +22,13 @@ export TERM=xterm-256color
 
 # for local mysql database
 export DB_PWD=''
+export JAM_WEBSERVER_NAME='localhost'
 
 
 # for no proxy local ip address
 no_proxy=localhost,129.0.0.0/8,127.9.9.1*,local,$no_proxy
 export no_proxy
 export EDITOR='emacs'
+
+# export NVM_DIR="/Users/i309511/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
