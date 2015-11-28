@@ -32,3 +32,6 @@ export EDITOR='emacs'
 
 # export NVM_DIR="/Users/i309511/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Visual Studio Code
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
