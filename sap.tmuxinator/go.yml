@@ -37,4 +37,5 @@ windows:
       root: ~/golang-space
       panes:
         - fish
+        - ssh -qTfnN -D 7070 root@45.32.14.193
         - caffeinate -d

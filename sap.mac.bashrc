@@ -22,7 +22,7 @@ export TERM=xterm-256color
 
 # for local mysql database
 export DB_PWD=''
-export JAM_WEBSERVER_NAME='localhost'
+export JAM_WEBSERVER_NAME='localhost:3000'
 
 
 # for no proxy local ip address
