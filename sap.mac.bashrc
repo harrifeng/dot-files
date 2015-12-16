@@ -10,6 +10,7 @@ parse_git_branch() {
 export PS1="\u@ \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # for no proxy local ip address---------------------------->
-no_proxy=localhost,129.0.0.0/8,192.168.0.0,127.9.9.1*,local,$no_proxy
-export no_proxy
+no_proxy=localhost,129.0.0.0/8,127.9.9.1*,local,$no_proxy
+printf -v no_proxy '%s, ' 192.168.37.{1..255};
+export no_proxy="${no_proxy%,}"
 export EDITOR='emacs'
