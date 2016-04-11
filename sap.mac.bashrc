@@ -14,3 +14,9 @@ no_proxy=localhost,129.0.0.0/8,127.9.9.1*,local,$no_proxy
 printf -v no_proxy '%s, ' 192.168.37.{1..255};
 export no_proxy="${no_proxy%,}"
 export EDITOR='emacs'
+
+# For golang
+export GOPATH=~/golang-space
+export PATH=$PATH:$GOPATH/bin
+# export GOROOT=/usr/local/opt/go/libexec
+# export PATH=$PATH:$GOROOT/bin
